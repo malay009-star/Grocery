@@ -1,0 +1,66 @@
+    #main_sec {
+        width: 90%;
+        margin: auto;
+        height: 100vh;
+    }
+    
+    #box {
+        width: 600px;
+        // height: 350px;
+        border-radius: 10px;
+        background-color: white;
+        box-shadow: 0px 0px 20px 0px rgba($color: (#000000), $alpha: 0.3);
+        #error_msg {
+            color: rgb(87, 87, 87);
+            letter-spacing: 3px;
+            display: none;
+            // color: rgb(139, 223, 139);
+        }
+        input {
+            width: 420px;
+            border: 1px solid rgba($color: (#000000), $alpha: 0.3);
+            ;
+            background-color: #F1F5F8;
+            &::placeholder {
+                padding-left: 1px;
+                font-weight: 300;
+                color: rgb(175, 175, 175);
+            }
+        }
+    }
+    
+    #item-box {
+        display: none;
+        img {
+            cursor: pointer;
+        }
+    }
+    
+    @include sm-tablet {
+        #box {
+            width: 500px;
+        }
+    }
+    
+    @include mobile {
+        #box {
+            width: 450px;
+        }
+    }
+    
+    @include sm-mobile {
+        #box {
+            width: 370px;
+            text-align: left;
+            #error_msg {
+                font-size: 12px;
+                text-align: left;
+            }
+            h1 {
+                font-size: 2rem;
+            }
+            input {
+                width: 160px;
+            }
+        }
+    }

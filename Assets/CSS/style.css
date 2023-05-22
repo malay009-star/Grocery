@@ -1,0 +1,79 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Noto+Nastaliq+Urdu&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Noto+Nastaliq+Urdu&family=Poppins:wght@100;200;300;400;500;600;700;800;900&family=Signika+Negative:wght@300;400;500;600;700&display=swap");
+*,
+::after,
+::before {
+  padding: 0%;
+  margin: 0%;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  background-color: white;
+  font-family: Poppins, sans-serif;
+}
+
+#main_sec {
+  width: 90%;
+  margin: auto;
+  height: 100vh;
+}
+
+#box {
+  width: 600px;
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
+}
+#box #error_msg {
+  color: rgb(87, 87, 87);
+  letter-spacing: 3px;
+  display: none;
+}
+#box input {
+  width: 420px;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  background-color: #F1F5F8;
+}
+#box input::placeholder {
+  padding-left: 1px;
+  font-weight: 300;
+  color: rgb(175, 175, 175);
+}
+
+#item-box {
+  display: none;
+}
+#item-box img {
+  cursor: pointer;
+}
+
+@media (max-width: 750px) {
+  #box {
+    width: 500px;
+  }
+}
+@media (max-width: 500px) {
+  #box {
+    width: 450px;
+  }
+}
+@media (max-width: 455px) {
+  #box {
+    width: 370px;
+    text-align: left;
+  }
+  #box #error_msg {
+    font-size: 12px;
+    text-align: left;
+  }
+  #box h1 {
+    font-size: 2rem;
+  }
+  #box input {
+    width: 160px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

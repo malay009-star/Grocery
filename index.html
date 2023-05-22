@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="icon" href="img/paypaal.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="Assets/CSS/style.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Grocery Bud</title>
+</head>
+
+<body>
+    <section class="flex items-center justify-center" id="main_sec">
+        <div class="pb-16 pt-10 flex  justify-center flex-col px-10 text-center" id="box">
+            <p class="px-20 rounded bg-red-300" id="error_msg">Error message</p>
+            <h1 class="text-3xl font-semibold text-[#063251] pb-10 pt-5">Grocery Bud</h1>
+            <div class="flex">
+                <input class=" rounded py-1 pl-5" type="text" id="input" placeholder="Enter a value">
+                <button onclick="showItem()" class="px-5 py-2 ml-1 rounded bg-blue-200" id="btn">Submit</button>
+            </div>
+            <div class="text-left mt-10 flex justify-between items-center bg-blue-100 py-1 px-3 rounded" id="item-box">
+                <p class="text-[#063251]" id="item">item</p>
+                <img class="w-5 h-5" src="Assets/img/trash.png" alt="" id="Dell">
+            </div>
+        </div>
+    </section>
+
+    <script src="Assets/JS/main.js"></script>
+</body>
+
+</html>
