@@ -2,19 +2,17 @@
         width: 90%;
         margin: auto;
         height: 100vh;
+        // background-color: red;
     }
     
     #box {
         width: 600px;
-        // height: 350px;
         border-radius: 10px;
         background-color: white;
         box-shadow: 0px 0px 20px 0px rgba($color: (#000000), $alpha: 0.3);
         #error_msg {
             color: rgb(87, 87, 87);
             letter-spacing: 3px;
-            display: none;
-            // color: rgb(139, 223, 139);
         }
         input {
             width: 420px;
@@ -29,10 +27,21 @@
         }
     }
     
-    #item-box {
-        display: none;
+    #groceryList {
+        // display: none;
         img {
+            width: 20px;
+            height: 20px;
             cursor: pointer;
+        }
+    }
+    
+    #cleare_item {
+        // display: none;
+        letter-spacing: 7px;
+        cursor: pointer;
+        &:hover {
+            color: red;
         }
     }
     
@@ -51,10 +60,10 @@
     @include sm-mobile {
         #box {
             width: 370px;
-            text-align: left;
+            // text-align: left;
             #error_msg {
                 font-size: 12px;
-                text-align: left;
+                // text-align: left;
             }
             h1 {
                 font-size: 2rem;

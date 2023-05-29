@@ -15,18 +15,26 @@
 
 <body>
     <section class="flex items-center justify-center" id="main_sec">
-        <div class="pb-16 pt-10 flex  justify-center flex-col px-10 text-center" id="box">
-            <p class="px-20 rounded bg-red-300" id="error_msg">Error message</p>
-            <h1 class="text-3xl font-semibold text-[#063251] pb-10 pt-5">Grocery Bud</h1>
+        <div class="py-10 flex  justify-center flex-col px-10 text-center" id="box">
+            <!-- error message -->
+            <p class="px-20 rounded" id="error_msg"></p>
+            <!-- heading -->
+            <h1 class="text-3xl font-semibold text-[#063251] pb-10 pt-4">Grocery Bud</h1>
+            <!-- input field -->
             <div class="flex">
-                <input class=" rounded py-1 pl-5" type="text" id="input" placeholder="Enter a value">
-                <button onclick="showItem()" class="px-5 py-2 ml-1 rounded bg-blue-200" id="btn">Submit</button>
+                <input class=" rounded py-1 pl-5" type="text" id="userInput" placeholder="Enter a value...........">
+                <button class="px-5 py-2 ml-1 rounded bg-blue-200" id="btn">Submit</button>
             </div>
-            <div class="text-left mt-10 flex justify-between items-center bg-blue-100 py-1 px-3 rounded" id="item-box">
-                <p class="text-[#063251]" id="item">item</p>
-                <img class="w-5 h-5" src="Assets/img/trash.png" alt="" id="Dell">
+            <!-- grocery box -->
+            <!-- <div class="all_item">
+                <p>all items</p>
+            </div> -->
+            <div class="text-left py-2 rounded" id="groceryList" data-index="dfd">
+
             </div>
-        </div>
+
+            <p class="rounded text-red-400" id="cleare_item"></p>
+
     </section>
 
     <script src="Assets/JS/main.js"></script>

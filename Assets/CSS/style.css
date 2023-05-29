@@ -29,7 +29,6 @@ body {
 #box #error_msg {
   color: rgb(87, 87, 87);
   letter-spacing: 3px;
-  display: none;
 }
 #box input {
   width: 420px;
@@ -42,11 +41,18 @@ body {
   color: rgb(175, 175, 175);
 }
 
-#item-box {
-  display: none;
-}
-#item-box img {
+#groceryList img {
+  width: 20px;
+  height: 20px;
   cursor: pointer;
+}
+
+#cleare_item {
+  letter-spacing: 7px;
+  cursor: pointer;
+}
+#cleare_item:hover {
+  color: red;
 }
 
 @media (max-width: 750px) {
@@ -62,11 +68,9 @@ body {
 @media (max-width: 455px) {
   #box {
     width: 370px;
-    text-align: left;
   }
   #box #error_msg {
     font-size: 12px;
-    text-align: left;
   }
   #box h1 {
     font-size: 2rem;
